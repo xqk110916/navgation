@@ -17,14 +17,16 @@
     },
     methods: {
       reload(e) {
+        console.log(e)
         if(e.code == 'F5' && e.keyCode == 116) {
+          console.log(e)
           this.$router.push('/')
         }
       }
     },
     components: {
       Index
-    }
+    } 
   }
 </script>
 

@@ -2,13 +2,10 @@
   <div class="sys">
     <div class="image">
       <img src="../public/image/10.jpg" alt="">
-      <h2>南华资本-测试环境相关服务</h2>
+      <h2>测试环境相关服务</h2>
     </div>
     <div class="skip">
-      <skip-btn title="甘茂测试前端" details="测试环境用于部门内部技术人员测试使用"></skip-btn>
-      <skip-btn title="甘茂测试后台" details="测试环境用于部门内部技术人员测试使用"></skip-btn>
-      <skip-btn title="测试前端" details="测试环境用于部门内部技术人员测试使用"></skip-btn>
-      <skip-btn title="测试后台" details="测试环境用于部门内部技术人员测试使用"></skip-btn>
+      <skip-btn v-for="(item, index) in settings.test" :key="index" :title="item.name" :details="item.details" :url="item.url"></skip-btn>
     </div>
   </div>
 </template>
@@ -23,7 +20,8 @@
     },
     components: {
       skipBtn,
-    }
+    },
+
   }
 </script>
 
@@ -41,7 +39,7 @@
         top: 50%;
         left: 50%;
         font-size: 50px;
-        margin-left: -425px;
+        margin-left: -200px;
         margin-top: -25px;
         color: #001e59;
         opacity: .8;

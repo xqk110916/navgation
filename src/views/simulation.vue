@@ -10,9 +10,7 @@
       
     </div>
     <div class="skip">
-      <skip-btn title="仿真测试 " details="客户体验入口,用于客户体验南华资本金融衍生品交易"></skip-btn>
-      <skip-btn title="生产后台管理" details="客户体验入口的后台管理系统，OA账户密码修改需要遵从公司的统一管理，不能在本系统修改"></skip-btn>
-      <skip-btn title="内部测试客户端下载" details="内部测试客户端下载"></skip-btn>
+      <skip-btn v-for="(item, index) in settings.simulation" :key="index" :title="item.name " :details="item.details" :url="item.url"></skip-btn>
     </div>
   </div>
 </template>

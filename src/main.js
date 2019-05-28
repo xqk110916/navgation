@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/router'
-import store from './vuex/store'
+
+import settings from './public/setting.vue'
 import './plugins/element.js'
 
 Vue.config.productionTip = false
+Vue.prototype.settings = settings
 
 new Vue({
   router,
-  store,
   render: h => h(App)
 }).$mount('#app')

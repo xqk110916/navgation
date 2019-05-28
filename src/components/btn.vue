@@ -13,7 +13,7 @@
   export default {
     methods:{
       target() {
-        window.location.href = url
+        window.open(this.url)
       }
     },
     props:['title', 'details', 'url']
@@ -73,7 +73,7 @@
       height: 35px;
       border-radius: 10px;
       margin-left: -45px;
-      
+      cursor: pointer;
     }
   }
 </style>

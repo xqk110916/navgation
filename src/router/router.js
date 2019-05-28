@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Index from '../views/index.vue'
 import production from '../views/production.vue'
 import simulation from '../views/simulation.vue'
 import system from '../views/system.vue'
@@ -13,7 +12,7 @@ export default new Router({
   routes: [
     {
       path:'/',
-      component: Index
+      component: system
     },
     {
       path:'/production',
@@ -22,10 +21,6 @@ export default new Router({
     {
       path:'/simulation',
       component: simulation
-    },
-    {
-      path:'/system',
-      component: system
     },
     {
       path:'/test',

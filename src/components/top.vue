@@ -4,11 +4,10 @@
       <img src="../public/image/nanhua_logo.png" alt="">
     </div>
     <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" active-text-color="#409eff" router>
-      <el-menu-item index="/">南华资本-金融衍生品部</el-menu-item>
-      <el-menu-item index="system">系统环境说明</el-menu-item>
-      <el-menu-item index="production">生产环境</el-menu-item>
-      <el-menu-item index="simulation">仿真环境</el-menu-item>
-      <el-menu-item index="test">测试环境</el-menu-item>
+      <el-menu-item index="/">南华资本-金融衍生品部系统环境说明</el-menu-item>
+      <el-menu-item index="/production">生产环境</el-menu-item>
+      <el-menu-item index="/simulation">仿真环境</el-menu-item>
+      <el-menu-item index="/test">测试环境</el-menu-item>
     </el-menu>
   </div>
 </template>

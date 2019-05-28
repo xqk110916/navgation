@@ -9,19 +9,10 @@
       </div>
       
     </div>
-    <div class="skip">
-      <skip-btn title="生产当前报价交易 " details="用户在上面的操作都具有法律效力，请慎重操作"></skip-btn>
-      <skip-btn title="生产后台管理" details="用户在上面的操作都具有法律效力，请慎重操作"></skip-btn>
-      <skip-btn title="最新版本" details="用户在上面的操作都具有法律效力，请慎重操作"></skip-btn>
-      <skip-btn title="上一版本" details="用户在上面的操作都具有法律效力，请慎重操作"></skip-btn>
-      <skip-btn title="最老版本报价 " details="用户在上面的操作都具有法律效力，请慎重操作"></skip-btn>
+    <div class="skip" v-for="(items, index) in settings.production" :key="index">
+      <skip-btn v-for="(item, i) in items" :title="item.name" :details="item.details" :url="item.url" :key="i"></skip-btn>
     </div>
-    <div class="skip">
-      <skip-btn title="最老版本报价" details="用户在上面的操作都具有法律效力，请慎重操作"></skip-btn>
-      <skip-btn title="生产当前报价交易" details="用户在上面的操作都具有法律效力，请慎重操作"></skip-btn>
-      <skip-btn title=" 生产后台管理" details="用户在上面的操作都具有法律效力，请慎重操作"></skip-btn>
-      <skip-btn title="最新版本 " details="用户在上面的操作都具有法律效力，请慎重操作"></skip-btn>
-    </div>
+
   </div>
 </template>
 
