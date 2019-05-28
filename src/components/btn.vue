@@ -30,6 +30,7 @@
     border: 1px solid #eee;
     position: relative;
     cursor: pointer;
+    background:#eaf2fe;
 
     .title {
       font-size: 18px;

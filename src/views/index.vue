@@ -4,6 +4,7 @@
     <div class="text">
       <p>欢迎访问南华资本-金融衍生部系统环境说明</p>
     </div>
+    <div class="shade"></div>
   </div>
 </template>
 
@@ -22,6 +23,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.shade {
+  background:#CCCCFF;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  opacity: .2;
+  z-index: 0;
+}
+
 .text{
 
     p {
